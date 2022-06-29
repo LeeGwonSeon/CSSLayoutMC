@@ -74,6 +74,6 @@
 - [x] [https://wonhundred.com/](https://wonhundred.com/)
 
 ### 4. 공부에 필요한 환경설정 및 설치할 준비물
-  - visual studio code
-  - Google Chrome browser
-  - node.js
+  - [x] visual studio code
+  - [x] Google Chrome browser
+  - [x] node.js
