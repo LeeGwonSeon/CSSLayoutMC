@@ -3,7 +3,7 @@
 ### 1. 이것을 시작한 이유
   CSS Layout에 대한 기초지식을 공부하고 웹 화면 제작에 도전하기 위함.
 ### 2. 사용언어
- CSS Layout, SCSS, Grid
+ CSS Layout, SCSS, Grid, Flexbox
 ### 3. 배울 내용
  @@ -1,76 +1,76 @@
 # SCSS Masterclass
