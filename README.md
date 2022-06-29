@@ -2,7 +2,7 @@
 ## 프로젝트 목차 
 ### 1. 이것을 시작한 이유
   CSS Layout에 대한 기초지식을 공부하고 웹 화면 제작에 도전하기 위함.
-### 2. 사용언어
+### 2. 사용언어 및 기술
  CSS Layout, SCSS, Grid, Flexbox
 ### 3. 배울 내용
  @@ -1,76 +1,76 @@
@@ -72,3 +72,8 @@
 - [x] [https://canalstreet.market/](https://canalstreet.market/)
 - [ ] [https://wonhundred.com/](https://wonhundred.com/)
 - [x] [https://wonhundred.com/](https://wonhundred.com/)
+
+### 4. 공부에 필요한 환경설정 및 설치할 준비물
+  - visual studio code
+  - Google Chrome browser
+  - node.js
