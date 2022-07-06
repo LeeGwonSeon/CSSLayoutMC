@@ -1,9 +1,10 @@
 .father {
     display: flex;
     justify-content: space-around;
+    align-content: space-around;
     /* Main Axis */
-    height: 100vh;
-    flex-direction: column;
+    height: 120vh;
+    flex-wrap: wrap;
 }
 
 .child {
@@ -12,13 +13,8 @@
     background-color: blueviolet;
     color: white;
     font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.child:nth-child(1) {
-    order: 2;
-    align-self: center;
-}
-
-.child:nth-child(2) {
-    order: 3;
-}
