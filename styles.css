@@ -7,30 +7,23 @@ body {
     display: grid;
     gap: 5px;
     height: 50vh;
-    grid-template: 
-    "header header header header" 1fr
-    "content content content nav" 2fr
-    "footer footer footer footer" 1fr / 1fr 1fr 1fr 1fr;
-    ;
-
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    place-items: stretch center;
   }
 
 .header{
     background-color: chartreuse;
-    grid-area: header;
 }
 
 .content{
     background-color: blue;
-    grid-area: content;
 }
 
 .nav{
     background-color: blueviolet;
-    grid-area: nav;
 }
 
 .footer{
     background-color: coral;
-    grid-area: footer;
 }
