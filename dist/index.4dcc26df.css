@@ -1,17 +1,20 @@
+button, a {
+  text-transform: uppercase;
+  color: #fff;
+  background-color: peru;
+  border-radius: 7px;
+  padding: 5px 10px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+}
+
 a {
-  margin-bottom: 5px;
+  text-decoration: none;
 }
 
-a:nth-child(2n+1) {
-  color: #00f;
-  text-decoration: none;
-  display: block;
-}
-
-a:nth-child(2n) {
-  color: red;
-  text-decoration: none;
-  display: block;
+button {
+  border: none;
 }
 
 /*# sourceMappingURL=index.4dcc26df.css.map */
