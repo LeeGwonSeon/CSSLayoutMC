@@ -1,0 +1,17 @@
+a {
+  margin-bottom: 5px;
+}
+
+a:nth-child(2n+1) {
+  color: #00f;
+  text-decoration: none;
+  display: block;
+}
+
+a:nth-child(2n) {
+  color: red;
+  text-decoration: none;
+  display: block;
+}
+
+/*# sourceMappingURL=index.4dcc26df.css.map */
