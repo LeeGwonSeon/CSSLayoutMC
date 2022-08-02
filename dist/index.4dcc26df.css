@@ -1,20 +1,23 @@
-button, a {
-  text-transform: uppercase;
-  color: #fff;
-  background-color: peru;
-  border-radius: 7px;
-  padding: 5px 10px;
-  font-family: inherit;
-  font-size: 12px;
-  font-weight: 500;
+h1 {
+  color: red;
 }
 
-a {
-  text-decoration: none;
+@media screen and (min-width: 500px) and (max-width: 690px) {
+  h1 {
+    color: #ff0;
+  }
 }
 
-button {
-  border: none;
+@media screen and (min-width: 500px) and (max-width: 690px) and (orientation: landscape) {
+  h1 {
+    font-size: 60px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1120px) {
+  h1 {
+    color: purple;
+  }
 }
 
 /*# sourceMappingURL=index.4dcc26df.css.map */
