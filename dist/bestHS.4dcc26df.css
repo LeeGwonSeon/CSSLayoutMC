@@ -57,9 +57,9 @@ header {
 }
 
 header h1 {
-  text-transform: uppercase;
   width: 50%;
-  letter-spacing: 10px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
   font-size: 4.6rem;
 }
 
