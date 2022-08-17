@@ -1,0 +1,93 @@
+@import "https://fonts.googleapis.com/css?family=Yrsa:400,500&display=swap";
+@import "https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap";
+* {
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  margin-top: 75px;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+}
+
+header {
+  height: 75px;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 0 10%;
+  display: grid;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+header h1 {
+  place-self: center;
+  font-family: Yrsa;
+}
+
+header > span {
+  justify-self: end;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li:not(:last-child) {
+  margin-right: 10px;
+  font-family: Montserrat, sans-serif;
+}
+
+header .logo {
+  font-size: 48px;
+  font-weight: 500;
+  display: flex;
+}
+
+header .logo span {
+  margin: 0 -3px;
+  transform: rotateZ(-15deg);
+}
+
+.hero {
+  grid-template-rows: calc(100vh - 60px);
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+}
+
+.hero .hero__img {
+  background-image: url("https://source.unsplash.com/random/");
+  background-position: center;
+  background-size: 100%;
+}
+
+.hero .hero__text {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.hero .hero__text h2 {
+  text-align: center;
+  width: 60%;
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.hero .hero__text span {
+  font-size: 12px;
+}
+
+.hero .hero__text span a {
+  color: #ff6429;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=TolvComment.6838f346.css.map */
