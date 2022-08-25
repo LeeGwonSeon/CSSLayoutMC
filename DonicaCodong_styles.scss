@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito|PT+Serif:400,400i&display=swap");
+@import "_DonicaCodong_elements";
+@import "_DonicaCodong_variables";
+
+* {
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    margin-left: 0;
+    margin-right: 0;
+    font-family: "PT Serif", serif;
+    background-color: #f0efeb;
+    color: $black;
+    padding: 30px 40px;
+    line-height: 1.5;
+}
+
+header {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 125px;
+    padding-left: 40px;
+}
+
+.works {
+    margin-bottom: 80px;
+    .works__header {
+        @extend %grid;
+        padding-left: 40;
+        padding-bottom: 10px;
+        span {
+            @extend %tinyText;
+        }
+    }
+    .works__list {
+        .works__work {
+            cursor: pointer;
+            font-size: 20px;
+            border-top: 1px solid $black;
+            padding: 15px 0;
+            @extend %grid;
+            &:hover {
+                font-style: italic;
+            }
+        }
+    }
+}
+.cv {
+    margin-bottom: 80px;
+}
+
+.about {
+    padding-bottom: 80px;
+    a {
+        color: #fc3f33;
+        &:hover {
+            font-style: italic;
+        }
+    }
+}
+
+.cv,
+.about {
+    font-size: 26px;
+    span {
+        @extend %tinyText;
+    }
+}

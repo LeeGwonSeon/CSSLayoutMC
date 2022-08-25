@@ -1,0 +1,78 @@
+@import "https://fonts.googleapis.com/css?family=Nunito|PT+Serif:400,400i&display=swap";
+.cv span, .about span, .works .works__header span {
+  color: #fc3f33;
+  font-family: Nunito;
+  font-size: 12px;
+}
+
+.works .works__list .works__work, .works .works__header {
+  grid-template-columns: 1fr 3fr 5fr;
+  display: grid;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  color: #444;
+  background-color: #f0efeb;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 30px 40px;
+  font-family: PT Serif, serif;
+  line-height: 1.5;
+}
+
+header {
+  letter-spacing: 1px;
+  margin-bottom: 125px;
+  padding-left: 40px;
+  font-size: 18px;
+}
+
+.works {
+  margin-bottom: 80px;
+}
+
+.works .works__header {
+  padding-bottom: 10px;
+  padding-left: 40px;
+}
+
+.works .works__list .works__work {
+  cursor: pointer;
+  border-top: 1px solid #444;
+  padding: 15px 0;
+  font-size: 20px;
+}
+
+.works .works__list .works__work:hover {
+  font-style: italic;
+}
+
+.cv {
+  margin-bottom: 80px;
+}
+
+.about {
+  padding-bottom: 80px;
+}
+
+.about a {
+  color: #fc3f33;
+}
+
+.about a:hover {
+  font-style: italic;
+}
+
+.cv, .about {
+  font-size: 26px;
+}
+
+/*# sourceMappingURL=DonicaCoding.eb62b51f.css.map */
