@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 45px;
+  font-family: DM Serif Display, monospace;
+}
+
+header {
+  background-color: #000;
+  border: 1px solid #000;
+  margin-bottom: 100px;
+}
+
+header nav ul {
+  grid-template-rows: repeat(2, 60px);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  display: grid;
+}
+
+header nav ul li {
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+header nav ul li:nth-child(2) {
+  text-transform: uppercase;
+  grid-column-start: span 2;
+  font-size: 32px;
+}
+
+main h1, main h6 {
+  text-align: center;
+}
+
+main h1 {
+  margin-bottom: 20px;
+  font-size: 58px;
+}
+
+main h6 {
+  margin-bottom: 50px;
+  font-family: B612 Mono;
+  font-size: 12px;
+}
+
+.hero {
+  grid-template-rows: 80vh;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 150px;
+  display: grid;
+}
+
+.hero .hero__img {
+  background-image: url("https://source.unsplash.com/random/");
+  background-position: center;
+  background-size: cover;
+}
+
+.hero .hero__img:first-child {
+  background-image: url("https://source.unsplash.com/random/1");
+}
+
+.hero .hero__img:last-child {
+  background-image: url("https://source.unsplash.com/random/2");
+}
+
+.hero .hero__img:nth-last-child(2) {
+  background-image: url("https://source.unsplash.com/random/3");
+}
+
+.arrivals h4 {
+  text-align: center;
+  margin-bottom: 70px;
+  font-size: 36px;
+}
+
+.arrivals .wrapper {
+  background-color: #000;
+  border: 1px solid #000;
+  grid-template-rows: 80vh auto;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  display: grid;
+}
+
+.arrivals .wrapper .product, .arrivals .wrapper .arrivals__category {
+  background-color: #fff;
+}
+
+.arrivals .wrapper .arrivals__category {
+  text-align: center;
+  grid-column-start: span 2;
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+.arrivals .wrapper .product {
+  grid-template-rows: 80% auto;
+  gap: 20px;
+  padding: 40px;
+  display: grid;
+}
+
+.arrivals .wrapper .product .product__photo {
+  background-color: #000;
+}
+
+.arrivals .wrapper .product .product__data {
+  flex-direction: column;
+  display: flex;
+}
+
+.arrivals .wrapper .product .product__data .price {
+  margin-top: 10px;
+}
+
+footer {
+  height: 200px;
+  background-color: #000;
+  border: 1px solid #000;
+  grid-template-rows: 10fr 2fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  margin: 100px 0;
+  display: grid;
+}
+
+footer div {
+  background-color: #fff;
+}
+
+footer div:first-child {
+  grid-column: span 2;
+}
+
+footer div:last-child {
+  grid-column: 1 / -1;
+}
+
+/*# sourceMappingURL=CanalStreetCommentary.55d4b5da.css.map */
