@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=B612+Mono&family=DM+Serif+Display:ital@1&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -7,126 +8,175 @@ li {
 }
 
 body {
-  font-family: "DM Serif Display", monospace;
+  font-family: "B612 Mono", monospace;
   padding: 45px;
   margin-left: 0;
-  margin-right: 0;
+  margin-right: 160px;
 }
-
-header {
-  background-color: black;
-  border: 1px solid black;
-  margin-bottom: 100px;
+body nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 180px;
 }
-header nav ul {
+body nav ul {
   display: grid;
-  gap: 1px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 60px);
+  grid-template-columns: repeat(3, 60px);
+  grid-template-rows: 100vh;
 }
-header nav ul li {
-  background-color: white;
+body nav ul li {
+  background-color: #f64344;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 18px;
 }
-header nav ul li:nth-child(2) {
-  grid-column-start: span 2;
-  font-size: 32px;
-  text-transform: uppercase;
+body nav ul li span {
+  transform: rotateZ(90deg);
 }
-
-main h1,
-main h6 {
-  text-align: center;
+body nav ul li:first-child {
+  background-color: #5da3ec;
 }
-main h1 {
-  font-size: 58px;
-  margin-bottom: 20px;
-}
-main h6 {
-  font-family: "B612 Mono";
-  font-size: 12px;
-  margin-bottom: 50px;
+body nav ul li:last-child {
+  background-color: #ffb301;
 }
 
-.hero {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 80vh;
-  margin-bottom: 150px;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "DM Serif Display", serif;
 }
-.hero .hero__img {
-  background-image: url("https://source.unsplash.com/random/");
+
+main header {
+  margin-top: 250px;
+}
+main header h1 {
+  padding-left: 65px;
+  font-size: 80px;
+  width: 60%;
+  line-height: 1.2;
+  margin-bottom: 100px;
+}
+main header .header__photo {
+  width: 100%;
+  height: 120vh;
+  background-image: url("https://source.unsplash.com/random/12");
   background-position: center center;
   background-size: cover;
 }
-.hero .hero__img:first-child {
-  background-image: url("https://source.unsplash.com/random/1");
+
+.about {
+  margin-top: 120px;
+  margin-bottom: 240px;
+  padding: 0px 65px;
 }
-.hero .hero__img:last-child {
-  background-image: url("https://source.unsplash.com/random/2");
+.about h2 {
+  font-size: 120px;
+  width: 50%;
+  margin-bottom: 120px;
 }
-.hero .hero__img:nth-last-child(2) {
-  background-image: url("https://source.unsplash.com/random/3");
+.about .about__columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+}
+.about .about__columns .about__column {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 650px 20%;
+  gap: 30px;
+}
+.about .about__columns .about__column .img__wrapper {
+  overflow: hidden;
+}
+.about .about__columns .about__column .img__wrapper img {
+  max-width: 100%;
+}
+.about .about__columns .about__column span {
+  font-size: 12px;
+  line-height: 1.5;
 }
 
-.arrivals h4 {
-  font-size: 36px;
-  margin-bottom: 70px;
+.events {
+  padding: 0px 65px;
+  display: grid;
+  justify-items: center;
+  margin-bottom: 120px;
+}
+.events .events__header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center center;
+  font-size: 64px;
+}
+.events .events__header h4 {
+  font-size: 94px;
   text-align: center;
 }
-.arrivals .wrapper {
-  border: 1px solid black;
+.events .events__list {
+  margin-top: 150px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 80vh auto;
-  background-color: black;
-  gap: 1px;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center center;
+  width: 100%;
 }
-.arrivals .wrapper .product,
-.arrivals .wrapper .arrivals__category {
-  background-color: white;
-}
-.arrivals .wrapper .arrivals__category {
-  grid-column-start: span 2;
-  text-align: center;
-  font-size: 20px;
-  padding: 20px 0px;
-}
-.arrivals .wrapper .product {
-  padding: 40px;
-  display: grid;
-  gap: 20px;
-  grid-template-rows: 80% auto;
-}
-.arrivals .wrapper .product .product__photo {
-  background-color: black;
-}
-.arrivals .wrapper .product .product__data {
+.events .events__list .events__event {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-.arrivals .wrapper .product .product__data .price {
-  margin-top: 10px;
+.events .events__list .events__event span {
+  margin-bottom: 30px;
+  font-size: 12px;
+}
+.events .btn {
+  margin-top: 120px;
 }
 
-footer {
-  margin: 100px 0px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 10fr 2fr;
+.btn {
+  text-transform: lowercase;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 17px 60px;
+  transition: background-color 0.2s linear;
+}
+.btn:hover {
+  color: white;
   background-color: black;
-  gap: 1px;
-  height: 200px;
+}
+
+.location {
+  padding: 65px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 33vh;
+  gap: 60px;
+}
+.location .location__address {
+  font-size: 68px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
   border: 1px solid black;
 }
-footer div {
-  background-color: white;
+.location .location__address h3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
 }
-footer div:first-child {
-  grid-column: span 2;
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 200px 0px;
 }
-footer div:last-child {
-  grid-column: 1/-1;
+.contact h4 {
+  font-size: 56px;
+  margin-bottom: 30px;
 }/*# sourceMappingURL=CanalStreetCommentary_styles.css.map */
